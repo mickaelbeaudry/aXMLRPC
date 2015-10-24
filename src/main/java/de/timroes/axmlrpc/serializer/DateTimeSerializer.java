@@ -13,7 +13,7 @@ import org.w3c.dom.Element;
  */
 public class DateTimeSerializer implements Serializer {
 
-	private static final String DATETIME_FORMAT = "yyyyMMdd'T'HH:mm:ss";
+	private static final String DATETIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ss";
 	private static final SimpleDateFormat DATE_FORMATER = new SimpleDateFormat(DATETIME_FORMAT);
 
 	public Object deserialize(Element content) throws XMLRPCException {
